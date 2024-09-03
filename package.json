@@ -1,5 +1,6 @@
 {
   "name": "timfflex",
+  "homepage": "https://seoyoungrag.github.io/timfflex",
   "version": "2.0.0",
   "author": {
     "name": "Young Rag Seo",
@@ -8,6 +9,10 @@
   },
   "private": true,
   "scripts": {
+    "preexport": "rimraf out",
+    "export": "next export",
+    "touch": "touch out/.nojekyll",
+    "posttouch": "touch out/_next/.nojekyll",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

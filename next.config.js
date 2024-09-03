@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+const isProduction = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   modularizeImports: {
     '@mui/material': {
@@ -17,6 +20,9 @@ const nextConfig = {
       }
     ]
   },
+  reactStrictMode: true,
+  // basePath 명시
+  basePath: isProduction ? '/timfflex' : '',
   env: {
     NEXT_APP_VERSION: 'v2.0.0',
     NEXTAUTH_SECRET: 'LlKq6ZtYbr+hTC073mAmAh9/h2HwMfsFo4hrfCx5mLg=',
