@@ -15,7 +15,6 @@ import {
   Box,
   Checkbox,
   Button,
-  Typography,
   Chip,
   Grid
 } from '@mui/material';

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Box, Tabs, Tab, Paper, FormControl, Select, MenuItem, Button, SelectChangeEvent, Typography, Grid } from '@mui/material';
+import { Box, Tabs, Tab, Paper, FormControl, Select, MenuItem, Button, SelectChangeEvent, Typography } from '@mui/material';
 import RecruitLists from './recruitLists';
 
 const tabData = ['전체', '동탄HC', '일산TC', '인천TC', '충청TC', '남양주TC'];
