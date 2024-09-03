@@ -40,7 +40,13 @@
         "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
       }
     ],
-    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
     "prettier/prettier": [
       "warn",
       {
